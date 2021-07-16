@@ -33,7 +33,7 @@
 }
 .video{
 	padding: 30vw 0; 
-	width: 100%;
+	width: 10%;
 	height: 20px;
 	display: flex;
 	justify-content: center;
@@ -61,6 +61,10 @@ font-size: 3vw;
 .audio{
 	display: block;
 }
+video {
+  width: 32%;
+  height: auto;
+}
 
 #k1{
 	background-color: #FCD1D1;
@@ -74,7 +78,23 @@ font-size: 3vw;
 #k4{
 	background-color: #F9DFDC;
 }
+#nama{
+	display: inline;
+	font-size: 4vw;
+}
+#nama::before{
+	content: "🥳";
+}
+#nama::after{
+	content: "🎂";
+}
 
+.no-flex{
+	flex-direction: row;
+}
+.mg{
+	flex-direction: column;
+}
 
 
 iframe{
@@ -93,6 +113,7 @@ iframe{
   <div class="content">
     <div class="row" id="k1">
     	<div>
+			<h2>From: MG & Friends</h2>
 		<h2>Di click dulu supaya nd sepi heheh</h2> <br></div>
 		<div>
     	<iframe width="560" height="315" src="https://www.youtube.com/embed/fK7SR-i6pIg?start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -122,24 +143,69 @@ iframe{
 	  <h4> harus lebih rajin </h4>
 	</div>
 	<div class="row" id="k1">
-	  <h4> Jangan cepet menyerah nehh </h4>
+	  <h4> Jangan cepat menyerah nehh </h4>
 	</div>
     <div class="row" id="k2">
-	  <h4> Kapan torang meet dang? 🥺 </h4>
+	  <h4> Kapan dang torang meetup? 🥺 </h4>
 	</div>
     <div class="row" id="k3">
-	  <h4> So kangen skalii nih  </h4>
+	  <h4> So kangen skalii ini  </h4>
 	</div>
-    <div class="row" id="k4">
+    <div class="row" id="k1">
 	  <h4> Btw ini ada beberapa ucapan dari yang lain juga </h4>
 	</div>
-	<div class="row" id="k1">
-	  <h4> Enjoyy your Day Pingkan </h4>
-	  
+	<h4 style="font-size: 6vw;">From: Abang</h4>
+    <div class="row no-flex" id="k2">
+		<tr>
+			<td><h4 id="nama"> Abang </h4></td>
+		</tr>
+		<tr>
+			<th><video src="Abang.mp4" type="video/mp4" controls></video></th>
+		</tr>
+		<tr>
+			<td><h4 id="nama"> Abang </h4></td>
+		</tr>
 	</div>
-    <div class="row" id="k2">
-		<h4> Abang </h4>
-		<video src="Abang.mp4" type="video/mp4" width="352" height="640" controls>
+	<h4 style="font-size: 6vw;">From: Enee</h4>
+	<div class="row no-flex" id="k3">
+		<tr>
+			<td><h4 id="nama"> Enee </h4></td>
+		</tr>
+		<tr>
+			<th><video src="Enee.mp4" type="video/mp4" controls></video></th>
+		</tr>
+		<tr>
+			<td><h4 id="nama"> Enee </h4></td>
+		</tr>
+	</div>
+	<h4 style="font-size: 6vw;">From: Emel</h4>
+	<div class="row no-flex" id="k4">
+		<tr>
+			<td>
+				<h4 id="nama"> Emel </h4></td>
+		</tr>
+		<tr>
+			<th><video src="Emel.mp4" type="video/mp4" controls></video></th>
+		</tr>
+		<tr>
+			<td><h4 id="nama"> Emel </h4></td>
+		</tr>
+	</div>
+	<h4 style="font-size: 6vw;">From: MG</h4>
+	<div class="row" id="k2">
+		<table >
+			<tr>
+			<th rowspan="2"><h4 id="nama"> MG </h4></th>
+			<th style="padding-inline: 71.250px;"><h4 font-size: 6vw;">Empty.</h4></th>
+			<th rowspan="2"><h4 id="nama"> MG </h4></th>
+		  </tr>
+		  <tr>
+			<td style="padding-inline: 71.250px;"><h4 style="font-size: 3vw;">(kita suka nanti kse Slamat langsung)</h4></td>
+		</tr>
+		</table>
+	</div>
+	<div class="row" id="k1">
+		<h4> Enjoyy your Day yah Pingkan </h4>
 	</div>
     <div class="row" id="k4">
 	  <h4> babay... </h4>
